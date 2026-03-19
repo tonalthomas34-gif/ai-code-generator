@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Code Generator (No AI)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>⚡ AI Code Generator</h1>
+
+  <textarea id="prompt" placeholder="Type something like: Create login API in NodeJS"></textarea>
+
+  <div class="controls">
+    <select id="languageOverride">
+      <option value="">Auto Detect</option>
+      <option>JavaScript</option>
+      <option>NodeJS</option>
+      <option>Python</option>
+      <option>HTML</option>
+      <option>CSS</option>
+    </select>
+
+    <button onclick="generateCode()">Generate</button>
+    <button onclick="generateCode()">Generate Again</button>
+  </div>
+
+  <div id="loading" class="hidden">⏳ Generating...</div>
+
+  <pre><code id="output"></code></pre>
+
+  <button onclick="copyCode()">Copy Code</button>
+  <button onclick="downloadCode()">Download</button>
+</div>
+
+<div class="examples">
+  <p>Try:</p>
+  <button onclick="setPrompt('Create login API in NodeJS')">Login API</button>
+  <button onclick="setPrompt('Build HTML page with button')">HTML Page</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
