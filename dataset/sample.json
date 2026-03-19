@@ -1,0 +1,63 @@
+[
+  {
+    "title": "Express Server",
+    "language": "node",
+    "tags": ["server", "api"],
+    "description": "Basic Express server",
+    "code": "const express = require('express');\nconst app = express();\napp.listen({{PORT}}, () => console.log('Server running'));"
+  },
+  {
+    "title": "Login API",
+    "language": "node",
+    "tags": ["login", "api"],
+    "code": "app.post('/login', (req, res) => {\n  res.send('Login route');\n});"
+  },
+  {
+    "title": "HTML Boilerplate",
+    "language": "html",
+    "tags": ["html", "page"],
+    "code": "<!DOCTYPE html>\n<html>\n<head><title>{{TITLE}}</title></head>\n<body></body>\n</html>"
+  },
+  {
+    "title": "CSS Centering",
+    "language": "css",
+    "tags": ["center", "layout"],
+    "code": "body { display: flex; justify-content: center; align-items: center; }"
+  },
+  {
+    "title": "Python Flask App",
+    "language": "python",
+    "tags": ["api", "server"],
+    "code": "from flask import Flask\napp = Flask(__name__)\n@app.route('/')\ndef home(): return 'Hello'\napp.run(port={{PORT}})"
+  },
+  {
+    "title": "Fetch API",
+    "language": "javascript",
+    "tags": ["api", "fetch"],
+    "code": "fetch('/api').then(res => res.json()).then(data => console.log(data));"
+  },
+  {
+    "title": "React Component",
+    "language": "javascript",
+    "tags": ["react", "component"],
+    "code": "function App(){ return <h1>Hello</h1> } export default App;"
+  },
+  {
+    "title": "Node MongoDB",
+    "language": "node",
+    "tags": ["database", "mongodb"],
+    "code": "const mongoose = require('mongoose');\nmongoose.connect('{{DB_URL}}');"
+  },
+  {
+    "title": "Button HTML",
+    "language": "html",
+    "tags": ["button"],
+    "code": "<button>Click Me</button>"
+  },
+  {
+    "title": "Basic JS Function",
+    "language": "javascript",
+    "tags": ["function"],
+    "code": "function greet(){ console.log('Hello'); }"
+  }
+]
